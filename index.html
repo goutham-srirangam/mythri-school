@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mythri Global School</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#4CAF50',
+secondary: '#2196F3',
+accent: '#F44336'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.testimonial-slider {
+transition: transform 0.3s ease-in-out;
+}
+.nav-item.active {
+color: #23B1F9;
+border-bottom: 2px solid #23B1F9;
+}
+</style>
+</head>
+<body class="bg-white">
+<header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+<nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+<a href="#" class="flex items-center gap-2">
+  <img src="https://public.readdy.ai/ai/img_res/5b89f2ac12f417b9203510d5e5b6ac77.jpg" alt="School Logo" class="h-12 w-auto">
+</a>
+<div class="hidden md:flex space-x-8">
+<a href="#home" class="nav-item px-4 py-2 hover:bg-primary/10 rounded-full transition-all duration-300 relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-primary hover:after:w-1/2 after:transition-all">Home</a>
+<a href="#about" class="nav-item px-4 py-2 hover:bg-primary/10 rounded-full transition-all duration-300 relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-primary hover:after:w-1/2 after:transition-all">About Us</a>
+<a href="#admissions" class="nav-item px-4 py-2 hover:bg-primary/10 rounded-full transition-all duration-300 relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-primary hover:after:w-1/2 after:transition-all">Admissions</a>
+<a href="#academics" class="nav-item px-4 py-2 hover:bg-primary/10 rounded-full transition-all duration-300 relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-primary hover:after:w-1/2 after:transition-all">Academics</a>
+<a href="#facilities" class="nav-item px-4 py-2 hover:bg-primary/10 rounded-full transition-all duration-300 relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-primary hover:after:w-1/2 after:transition-all">Facilities</a>
+<a href="#contact" class="nav-item px-4 py-2 hover:bg-primary/10 rounded-full transition-all duration-300 relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-primary hover:after:w-1/2 after:transition-all">Contact</a>
+</div>
+<button class="md:hidden w-10 h-10 flex items-center justify-center">
+<i class="ri-menu-line text-2xl"></i>
+</button>
+</nav>
+</header>
+<main class="pt-16">
+<section id="home" class="relative h-[80vh] overflow-hidden">
+<img src="https://public.readdy.ai/ai/img_res/f4c0fb49f63214ec34372976ab9e743b.jpg"
+class="absolute inset-0 w-full h-full object-cover object-top" alt="School Environment">
+<div class="absolute inset-0 bg-black bg-opacity-50"></div>
+<div class="relative container mx-auto px-6 h-full flex flex-col justify-center items-center text-center text-white">
+<h1 class="text-5xl font-bold mb-6">Welcome to Mythri Global School</h1>
+<p class="text-xl mb-12 max-w-2xl">Empowering Minds, Building Futures - Where Excellence Meets Innovation in Education</p>
+<div class="flex space-x-6">
+<button class="!rounded-button bg-primary hover:bg-opacity-90 text-white px-8 py-3 font-semibold transition-all">
+Explore Admissions
+</button>
+<button class="!rounded-button border-2 border-white hover:bg-white hover:text-primary text-white px-8 py-3 font-semibold transition-all">
+Contact Us
+</button>
+</div>
+</div>
+</section>
+<section id="about" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-1/2">
+<h2 class="text-3xl font-bold mb-6">Our Mission & Vision</h2>
+<p class="text-gray-600 mb-6 leading-relaxed">
+At Mythri Global School, we believe in nurturing young minds to become future leaders and innovators. Our mission is to provide a holistic education that combines academic excellence with character development.
+</p>
+<div class="space-y-4">
+<div class="flex items-start space-x-4">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full">
+<i class="ri-lightbulb-line text-primary"></i>
+</div>
+<div>
+<h3 class="font-semibold mb-2">Innovation</h3>
+<p class="text-gray-600">Fostering creativity and critical thinking through modern teaching methods</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full">
+<i class="ri-heart-line text-primary"></i>
+</div>
+<div>
+<h3 class="font-semibold mb-2">Values</h3>
+<p class="text-gray-600">Building character through ethics, empathy, and social responsibility</p>
+</div>
+</div>
+</div>
+</div>
+<div class="md:w-1/2">
+<img src="https://public.readdy.ai/ai/img_res/ca9097a15f7fe0291df4306db5f44ea6.jpg"
+class="rounded-lg shadow-lg w-full" alt="About Us Illustration">
+</div>
+</div>
+</div>
+</section>
+<section id="admissions" class="py-20 bg-white">
+<div class="container mx-auto px-6 text-center">
+<h2 class="text-3xl font-bold mb-4">Admissions Open for 2025-26</h2>
+<p class="text-gray-600 mb-8 max-w-2xl mx-auto">Join our vibrant community of learners and begin your journey towards excellence</p>
+<div class="bg-primary bg-opacity-5 rounded-lg p-8 max-w-3xl mx-auto">
+<div class="grid md:grid-cols-3 gap-6 mb-8">
+<div class="p-6 bg-white rounded-lg shadow-sm">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mx-auto mb-4">
+<i class="ri-book-open-line text-primary"></i>
+</div>
+<h3 class="font-semibold mb-2">Primary School</h3>
+<p class="text-gray-600 text-sm">Grades 1-5</p>
+</div>
+<div class="p-6 bg-white rounded-lg shadow-sm">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mx-auto mb-4">
+<i class="ri-graduation-cap-line text-primary"></i>
+</div>
+<h3 class="font-semibold mb-2">Middle School</h3>
+<p class="text-gray-600 text-sm">Grades 6-8</p>
+</div>
+<div class="p-6 bg-white rounded-lg shadow-sm">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mx-auto mb-4">
+<i class="ri-building-line text-primary"></i>
+</div>
+<h3 class="font-semibold mb-2">High School</h3>
+<p class="text-gray-600 text-sm">Grades 9-12</p>
+</div>
+</div>
+<button class="!rounded-button bg-primary hover:bg-opacity-90 text-white px-8 py-3 font-semibold transition-all">
+Apply Now
+</button>
+</div>
+</div>
+</section>
+<section id="academics" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold text-center mb-12">Academic Excellence</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white p-6 rounded-lg shadow-sm">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4">
+<i class="ri-flask-line text-primary"></i>
+</div>
+<h3 class="font-semibold mb-3">STEM Programs</h3>
+<p class="text-gray-600">Comprehensive science and technology curriculum with hands-on learning experiences</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4">
+<i class="ri-palette-line text-primary"></i>
+</div>
+<h3 class="font-semibold mb-3">Arts & Culture</h3>
+<p class="text-gray-600">Rich programs in visual arts, music, drama, and cultural studies</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4">
+<i class="ri-team-line text-primary"></i>
+</div>
+<h3 class="font-semibold mb-3">Sports & Activities</h3>
+<p class="text-gray-600">Diverse sports programs and extracurricular activities for holistic development</p>
+</div>
+</div>
+</div>
+</section>
+<section id="facilities" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold text-center mb-12">World-Class Facilities</h2>
+<div class="grid md:grid-cols-4 gap-6">
+<div class="text-center p-6 hover:bg-gray-50 rounded-lg transition-all">
+<div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mx-auto mb-4">
+<i class="ri-computer-line text-primary text-2xl"></i>
+</div>
+<h3 class="font-semibold mb-2">Smart Classrooms</h3>
+<p class="text-gray-600 text-sm">Interactive digital learning environment</p>
+</div>
+<div class="text-center p-6 hover:bg-gray-50 rounded-lg transition-all">
+<div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mx-auto mb-4">
+<i class="ri-microscope-line text-primary text-2xl"></i>
+</div>
+<h3 class="font-semibold mb-2">Modern Labs</h3>
+<p class="text-gray-600 text-sm">State-of-the-art science and computer labs</p>
+</div>
+<div class="text-center p-6 hover:bg-gray-50 rounded-lg transition-all">
+<div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mx-auto mb-4">
+<i class="ri-book-2-line text-primary text-2xl"></i>
+</div>
+<h3 class="font-semibold mb-2">Library</h3>
+<p class="text-gray-600 text-sm">Extensive collection of books and digital resources</p>
+</div>
+<div class="text-center p-6 hover:bg-gray-50 rounded-lg transition-all">
+<div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mx-auto mb-4">
+<i class="ri-basketball-line text-primary text-2xl"></i>
+</div>
+<h3 class="font-semibold mb-2">Sports Complex</h3>
+<p class="text-gray-600 text-sm">Multiple sports facilities and training programs</p>
+</div>
+</div>
+</div>
+</section>
+<section id="testimonials" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold text-center mb-12">What Parents Say</h2>
+<div class="relative overflow-hidden">
+<div class="testimonial-slider flex transition-transform duration-300">
+<div class="min-w-full md:min-w-[33.333%] px-4">
+<div class="bg-white p-6 rounded-lg shadow-sm">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 rounded-full bg-gray-200 mr-4"></div>
+<div>
+<h3 class="font-semibold">Sarah Thompson</h3>
+<p class="text-gray-600 text-sm">Parent of Grade 5 Student</p>
+</div>
+</div>
+<p class="text-gray-600">"The school's commitment to academic excellence and personal development has been remarkable. My child has grown tremendously here."</p>
+</div>
+</div>
+<div class="min-w-full md:min-w-[33.333%] px-4">
+<div class="bg-white p-6 rounded-lg shadow-sm">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 rounded-full bg-gray-200 mr-4"></div>
+<div>
+<h3 class="font-semibold">Michael Chen</h3>
+<p class="text-gray-600 text-sm">Parent of Grade 8 Student</p>
+</div>
+</div>
+<p class="text-gray-600">"The innovative teaching methods and supportive environment have helped my son develop a genuine love for learning."</p>
+</div>
+</div>
+<div class="min-w-full md:min-w-[33.333%] px-4">
+<div class="bg-white p-6 rounded-lg shadow-sm">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 rounded-full bg-gray-200 mr-4"></div>
+<div>
+<h3 class="font-semibold">Emily Rodriguez</h3>
+<p class="text-gray-600 text-sm">Parent of Grade 3 Student</p>
+</div>
+</div>
+<p class="text-gray-600">"The teachers are exceptional and truly care about each student's success. We couldn't be happier with our choice."</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold text-center mb-12">Get in Touch</h2>
+<div class="grid md:grid-cols-2 gap-12">
+<div>
+<div class="mb-8">
+<h3 class="font-semibold mb-4">Contact Information</h3>
+<div class="space-y-4">
+<div class="flex items-start space-x-4">
+<div class="w-10 h-10 flex items-center justify-center">
+<i class="ri-map-pin-line text-primary"></i>
+</div>
+<div>
+<p class="text-gray-600">123 Education Street, Academic District</p>
+<p class="text-gray-600">New York, NY 10001</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="w-10 h-10 flex items-center justify-center">
+<i class="ri-phone-line text-primary"></i>
+</div>
+<div>
+<p class="text-gray-600">+1 (555) 123-4567</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="w-10 h-10 flex items-center justify-center">
+<i class="ri-mail-line text-primary"></i>
+</div>
+<div>
+<p class="text-gray-600">admissions@mythriglobal.edu</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h3 class="font-semibold mb-4">Follow Us</h3>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full hover:bg-opacity-20 transition-all">
+<i class="ri-facebook-fill text-primary"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full hover:bg-opacity-20 transition-all">
+<i class="ri-twitter-fill text-primary"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full hover:bg-opacity-20 transition-all">
+<i class="ri-instagram-fill text-primary"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full hover:bg-opacity-20 transition-all">
+<i class="ri-linkedin-fill text-primary"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="h-[400px] rounded-lg overflow-hidden">
+<img src="https://public.readdy.ai/gen_page/map_placeholder_1280x720.png" class="w-full h-full object-cover" alt="Location Map">
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-gray-900 text-white py-12">
+<div class="container mx-auto px-6">
+<div class="grid md:grid-cols-4 gap-8">
+<div>
+<a href="#" class="text-2xl font-['Pacifico'] text-white mb-4 block">logo</a>
+<p class="text-gray-400">Shaping Futures, Nurturing Excellence</p>
+</div>
+<div>
+<h4 class="font-semibold mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Admissions</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Academics</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Facilities</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold mb-4">Resources</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Parent Portal</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Student Portal</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Career</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">News & Events</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold mb-4">Newsletter</h4>
+<p class="text-gray-400 mb-4">Subscribe to our newsletter for updates</p>
+<div class="flex">
+<input type="email" placeholder="Your email" class="px-4 py-2 bg-gray-800 text-white rounded-l focus:outline-none">
+<button class="!rounded-r-button bg-primary px-4 py-2 hover:bg-opacity-90 transition-all">Subscribe</button>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+<p>&copy; 2025 Mythri Global School. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<button id="backToTop" class="fixed bottom-8 right-8 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center opacity-0 transition-opacity duration-300">
+<i class="ri-arrow-up-line"></i>
+</button>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+const header = document.querySelector('header');
+const backToTop = document.getElementById('backToTop');
+const navItems = document.querySelectorAll('.nav-item');
+const testimonialSlider = document.querySelector('.testimonial-slider');
+let currentSlide = 0;
+window.addEventListener('scroll', () => {
+if (window.scrollY > 100) {
+header.classList.add('shadow-md');
+backToTop.classList.remove('opacity-0');
+} else {
+header.classList.remove('shadow-md');
+backToTop.classList.add('opacity-0');
+}
+const sections = document.querySelectorAll('section');
+sections.forEach(section => {
+const rect = section.getBoundingClientRect();
+if (rect.top <= 100 && rect.bottom >= 100) {
+navItems.forEach(item => {
+item.classList.remove('active');
+if (item.getAttribute('href').slice(1) === section.id) {
+item.classList.add('active');
+}
+});
+}
+});
+});
+backToTop.addEventListener('click', () => {
+window.scrollTo({
+top: 0,
+behavior: 'smooth'
+});
+});
+setInterval(() => {
+currentSlide = (currentSlide + 1) % 3;
+testimonialSlider.style.transform = `translateX(-${currentSlide * 100}%)`;
+}, 5000);
+const subscribeButton = document.querySelector('button');
+subscribeButton.addEventListener('click', () => {
+const emailInput = document.querySelector('input[type="email"]');
+if (emailInput.value) {
+const notification = document.createElement('div');
+notification.className = 'fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded shadow-lg transition-opacity duration-300';
+notification.textContent = 'Thank you for subscribing!';
+document.body.appendChild(notification);
+setTimeout(() => {
+notification.remove();
+}, 3000);
+emailInput.value = '';
+}
+});
+});
+</script>
+</body>
+</html>
